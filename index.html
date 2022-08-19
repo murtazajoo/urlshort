@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,65 +16,166 @@
 </head>
 <body>
 
-  Features
-  Pricing
-  Resources
 
+  <header>
 
-<div id="shorturl"></div>
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
+<div id="logo">
+  <img src="images/logo.svg" alt="logo">
+</div>
+<nav>
   
-  Shorten a link here...
+  <ul>
+    <li>Features</li>
+    <li>Pricing</li>
+    <li>Resources</li>
+  </ul>
 
-  Shorten It!
+  <div id="register">
+    <button id="login">Login</button>
+    <button id="signup">  Sign Up</button>
+  </div>
+</nav>
 
-  Advanced Statistics
+  </header>
 
-  Track how your links are performing across the web with our 
+  <main>
+<section id="first">
+  <div id="divider">
+    <div id="firsttext">
+      <h1>More than just shorter links</h1>
+      <p>  Build your brand’s recognition and get detailed insights
+        on how your links are performing.</p>
+        <a href="#">Get Started</a>
+    </div>
+    <div id="svg">
+      <img src="images/illustration-working.svg" alt="">
+    </div>
+    
+  </div>
+
+  <div id="shortbox">
+    <input type="text" placeholder="Shorten a link here...">
+    <button> Shorten It!</button>
+  </div>
+</section>
+
+<section id="second">
+ <h1>  Advanced Statistics</h1>
+<p> Track how your links are performing across the web with our 
   advanced statistics dashboard.
+</p>
 
-  Brand Recognition
 
-  Boost your brand recognition with each click. Generic links don’t 
+<div id="threeboxes">
+<div class="box box1">
+<div class="boximg"><img src="images/icon-brand-recognition.svg" alt="icon-brand-recognition"></div>
+
+<h3>  Brand Recognition</h3>
+<p> Boost your brand recognition with each click. Generic links don’t 
   mean a thing. Branded links help instil confidence in your content.
+</p>
+</div>
 
-  Detailed Records
+<div class="box box2">
+  <div class="boximg">
+    <img src="images/icon-detailed-records.svg" alt="icon-detailed-records">
+    
+  </div>
+  <h3>    Detailed Records
+  </h3>
+  <p>  Gain insights into who is clicking your links. Knowing when and where 
+    people engage with your content helps inform better decisions.
+  </p>
+  </div>
 
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
+  <div class="box box3">
+    <div class="boximg">
+      <img src="images/icon-fully-customizable.svg" alt="icon-fully-customizable">
+      
+    </div>
+    <h3>  Fully Customizable</h3>
+    <p>Improve brand awareness and content discoverability through customizable 
+      links, supercharging audience engagement.
+    </p>
+    </div>
 
-  Fully Customizable
+</div>
 
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
+</section>
 
+<section id="third">
+  <h1>
   Boost your links today
+  </h1>
 
-  Get Started
+  <a href="#"> Get Started</a>
+</section>
 
-  Features
+<footer>
 
+  <div>
+    <img src="images/logowhitr.svg" alt="logo">
+
+  </div>
+
+  <div>
+    <p>Features</p>
+    <ul>
+      <li>
   Link Shortening
+      </li>
+      <li>
   Branded Links
+      </li>
+      <li>
   Analytics
+      </li>
+    </ul>
+  </div>
 
-  Resources
+  
+  <div>
+    <p>Resources</p>
+    <ul>
+      <li>Blog
+      </li>
+      <li>Developers
+      </li>
+      <li>Support
+      </li>
+    </ul>
+  </div>
 
-  Blog
-  Developers
-  Support
+  
+  <div>
+    <p>Company</p>
+    <ul>
+      <li>
+ About
+      </li>
+      <li>
+        Our Team
+      </li>
+      <li>
+        Careers
+      </li>
+      <li>  Contact</li>
+    </ul>
+  </div>
+<div>
 
-  Company
+  <img src="images/icon-facebook.svg" alt="icon-facebook">
+  <img src="images/icon-instagram.svg" alt="icon-instagram">
+  <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+  <img src="images/icon-twitter.svg" alt="icon-twitter">
+</div>
 
+
+</footer>
+
+  </main>
+<!-- 
+<div id="shorturl"></div>
   About
   Our Team
   Careers
@@ -108,7 +209,7 @@
 function shortenUrl(linnk){
  document.getElementById("shorturl").innerHTML = linnk.result_url
 
-}
+} -->
 
 </script>
 </body>
