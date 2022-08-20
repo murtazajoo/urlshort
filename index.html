@@ -54,12 +54,23 @@
   </div>
 
   <div id="shortbox">
-    <input type="text" placeholder="Shorten a link here...">
-    <button> Shorten It!</button>
+    <input type="text" placeholder="Shorten a link here..." id="inputurl">
+    <button onclick="shorten()"> Shorten It!</button>
   </div>
+
 </section>
 
 <section id="second">
+
+  
+  <div class="results">
+
+    <div class="result">
+      <div id="url">Your Shorten Link Will Appear Here</div> <button id="copy">Copy</button>
+    </div>
+    
+      </div>
+
  <h1>  Advanced Statistics</h1>
 <p> Track how your links are performing across the web with our 
   advanced statistics dashboard.
@@ -110,7 +121,7 @@
 
   <a href="#"> Get Started</a>
 </section>
-
+</main>
 <footer>
 
   <div>
@@ -173,7 +184,7 @@
 
 </footer>
 
-  </main>
+<script src="script.js"></script>
 <!-- 
 <div id="shorturl"></div>
   About
@@ -186,31 +197,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <script>const encodedParams = new URLSearchParams();
-    encodedParams.append("url", "https://google.com/");
-    
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': '4b7c2aa273mshb1dd4b16c24ce7fp1abcddjsn59b0d6a4bf22',
-            'X-RapidAPI-Host': 'url-shortener-service.p.rapidapi.com'
-        },
-        body: encodedParams
-    };
-    
-    fetch('https://url-shortener-service.p.rapidapi.com/shorten', options)
-        .then(response => response.json())
-        .then(response => shortenUrl(response))
-        .catch(err => console.error(err))
-
-
-
-function shortenUrl(linnk){
- document.getElementById("shorturl").innerHTML = linnk.result_url
-
-} -->
-
-</script>
+  
 </body>
 </html>

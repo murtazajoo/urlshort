@@ -163,9 +163,37 @@ h1{
 
 
 
+.results{
+    width: 80%;
+    margin: 0 auto;
+padding-bottom: 100px;
+}
+
+.result{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+border-radius: 10px;
+}
+
+.result button{
+    background-color: var(--Cyan);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
 #second{
-    background-color: var(--Gray);
-    padding-top: 200px;
+    background-color:rgb(245, 245, 245);
+    padding-top: 100px; 
 }
 
 #second > h1{
@@ -268,6 +296,7 @@ h1{
 
 #third h1{
 padding: 20px;
+font-size: 2em;
     color: white;
 }
 
